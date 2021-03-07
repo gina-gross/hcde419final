@@ -14,7 +14,23 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it:
 
-    #scene bg room
+    scene bg sketchbook with Fade(0.5, 0.5, 1.0)
+    scene beginning1 with Dissolve(1.0)
+    $ renpy.pause()
+    scene beginning2 with Dissolve(1.0)
+    $ renpy.pause()
+    scene phone screen1 with Fade(0.5, 0.0, 1.0)
+    $ renpy.pause()
+    scene phone screen2 with Dissolve(1.0)
+    $ renpy.pause()
+    scene phone screen3 with dissolve
+    $ renpy.pause()
+    scene phone screen4 with Dissolve(1.0)
+    $ renpy.pause()
+    scene beginning3 with Fade(0.5, 0.0, 1.0)
+    $ renpy.pause()
+    "..."
+    scene beginning4 with dissolve
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
