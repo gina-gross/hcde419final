@@ -56,6 +56,7 @@ label start:
             scene bg sketchbook with pixellate
             "Yet, time's been passing all the way."
             "It's already been a year. Not only do I already feel like I've lost so much time, but I'm afraid of losing my youth."
+<<<<<<< Updated upstream
             scene img then with Dissolve(0.7)
             "Why should I be 22 when I didn't even get to be 21? These years are supposed to be crucial. They're not supposed to be slipping through my fingers like sand, or like something else I can never get back."
             scene img then arrow with Dissolve(0.7)
