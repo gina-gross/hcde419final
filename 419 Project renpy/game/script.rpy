@@ -56,7 +56,6 @@ label start:
             scene bg sketchbook with pixellate
             "Yet, time's been passing all the way."
             "It's already been a year. Not only do I already feel like I've lost so much time, but I'm afraid of losing my youth."
-<<<<<<< Updated upstream
             scene img then with Dissolve(0.7)
             "Why should I be 22 when I didn't even get to be 21? These years are supposed to be crucial. They're not supposed to be slipping through my fingers like sand, or like something else I can never get back."
             scene img then arrow with Dissolve(0.7)
@@ -64,23 +63,9 @@ label start:
             scene img then and now with Dissolve(0.7)
             "Ugh, \"when this is all over\"... I hate saying that now, it just sounds like saying \"once I'm not depressed anymore\" or \"I swear he's gonna change\"."
             scene img then and now all info with Dissolve(0.7)
-            "I know everyone else has grown a year older, too. but it's my early twenties... Losing a single year right now feels like so much. I feel like I'm LOSING, WASTING so much."
-=======
-            scene img then
-            with dissolve
-            "Why should I be 22 already, heading towards 23, when I didn't even get to be 21? These years are supposed to be crucial. They're not supposed to be slipping through my fingers like sand, or like something else I can never get back."
-            scene img then arrow
-            with dissolve
-            "Will another entire age just get fucked down the drain? When this is all over, am I just going to wake up one day and find myself at 25? Because that's how I'm starting to feel."
-            scene img then and now
-            with dissolve
-            "Ugh, \"when this is all over\"... I hate saying that now, it just sounds like saying \"once I'm not depressed anymore\" or \"I swear he's gonna change\"."
-            scene img then and now all info
-            with dissolve
             "I know everyone else has grown a year older, too. but it's my early twenties... every year right now, from 20-25, feels crucial. Losing a single year in this stage of my life feels like so much. Like I'm losing, {i}wasting{/i} so much."
             "The thought of this going on and continuing to lose time for another year, or (god forbid) two, makes me feel sick. I want to be taking my first steps into establishing my future life;"
             "the idea of still feeling this waiting and anticipation, and not being fully or safely able to spread my wings and start my next chapter, then being plopped back into the world having missed my crucial transformative years..."
->>>>>>> Stashed changes
             jump choice1_done
 
 ##################################################
