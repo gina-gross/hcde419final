@@ -39,13 +39,13 @@ label start:
             $ dark = False
             # i'm feeling good. but i don't know, sometimes maybe i should take more time to acknowledge how tough this really all is. on everyone -- so it's okay to think about, sometimes, how it's been tough on me.
             "My performance in school has been great, it has actually improved a lot since quarantine started."
-            "Whether it's because engaging with school the way I like to became surprisingly more accessible (that's probably a big reason, actually), I've been consistently more engaged overall, feeling checked in."
-            "Which feels good. That's what I started off college like, it's what I think of as the default version of \"me\". But I go through cycles; I stray away from that and struggle to get back to it."
+            "Whether it's because engaging with school the way I like to became surprisingly more accessible{w} (that's probably a big reason, actually),{w} I've been consistently more engaged overall, feeling checked in."
+            "Which feels good. That's what I started off college like, it's what I think of as the default version of \"me\". But I go through cycles; I stray away from that and struggle to get back to it, at times."
             "It's how I like to think of myself as being; though that's probably too generalizing, a bit of the perfectionist in me."
             "But regardless, I like it when I feel like this— even if it's a high I can't always sustain, it feels like I've got my groove back. At least a little. I feel more fueled, energized."
-            "I feel intellectually stimulated, in a good way, and have somehow held the balance to not become {i}too{/i} stimulated and overwhelmed."
+            "I feel intellectually stimulated, in a good way, and have somehow held the balance thus far to not become {i}too{/i} stimulated and overwhelmed."
             "I still lose my energy sometimes, but it's less overreaching than other times in the past. There's always bumps along the road, but I feel good about my direction in general; I'm not getting too derailed."
-            "Part of it, too, probably has a lot to do with the fact that I entered the finishing stages of my education, finally capping it off FINALLY, as this all started."
+            "Part of it, too, probably has a lot to do with the fact that I entered the finishing stages of my education, finally capping it off {i}FINALLY{i}, as this all started."
             jump choice1_done
 
 
@@ -63,7 +63,9 @@ label start:
             scene img then and now with Dissolve(0.7)
             "Ugh, \"when this is all over\"... I hate saying that now, it just sounds like saying \"once I'm not depressed anymore\" or \"I swear he's gonna change\"."
             scene img then and now all info with Dissolve(0.7)
-            "I know everyone else has grown a year older, too. but it's my early twenties... Losing a single year right now feels like so much. I feel like I'm LOSING, WASTING so much."
+            "I know everyone else has grown a year older, too. but it's my early twenties... every year right now, from 20-25, feels crucial. Losing a single year in this stage of my life feels like so much. Like I'm losing, {i}wasting{/i} so much."
+            "The thought of this going on and continuing to lose time for another year, or (god forbid) two, makes me feel sick. I want to be taking my first steps into establishing my future life;"
+            "the idea of still feeling this waiting and anticipation, and not being fully or safely able to spread my wings and start my next chapter, then being plopped back into the world having missed my crucial transformative years..."
             jump choice1_done
 
 ##################################################
