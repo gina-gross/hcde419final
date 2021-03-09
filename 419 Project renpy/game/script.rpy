@@ -47,7 +47,12 @@ label start:
             # i'm feeling good. but i don't know, sometimes maybe i should take more time to acknowledge how tough this really all is. on everyone -- so it's okay to think about, sometimes, how it's been tough on me.
             "My performance in school has been great, it has actually improved a lot since quarantine started."
             "Whether it's because engaging with school the way I like to became surprisingly more accessible (that's probably a big reason, actually), I've been consistently more engaged overall, feeling checked in."
-            "It probably has a lot to do, too, with the fact this all is occurring right as I finally started to cap off my education."
+            "Which feels good. That's what I started off college like, it's what I think of as the default version of \"me\". But I go through cycles; I stray away from that and struggle to get back to it."
+            "It's how I like to think of myself as being; though that's probably too generalizing, a bit of the perfectionist in me."
+            "But regardless, I like it when I feel like this— even if it's a high I can't always sustain, it feels like I've got my groove back. At least a little. I feel more fueled, energized."
+            "I feel intellectually stimulated, in a good way, and have somehow held the balance to not become {i}too{/i} stimulated and overwhelmed."
+            "I still lose my energy sometimes, but it's less overreaching than other times in the past. There's always bumps along the road, but I feel good about my direction in general; I'm not getting too derailed."
+            "Part of it, too, probably has a lot to do with the fact that I entered the finishing stages of my education, finally capping it off FINALLY, as this all started."
             jump choice1_done
 
 
