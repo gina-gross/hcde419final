@@ -2,50 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 69: end of line expected.
-(Perhaps you left out a " at the end of the first line.)
-    "Okay. You see, I know our lives have changed, and it's okay to think about it, but the thing is the entire situation is messed up in so many ways, there's so much to think about, it causes pain and anger and frustration...
-                "and there's nothing I can do to just fix this situation so I just ask myself, \"Do you really want to subject yourself to this train of thought?\""
-    
-                menu:
-                    # choice3_dark
-                    "Feel your feelings.":
-                        $ dark = True
-                        "Wasting time... speaking of it, I still feel like I'm wasting so much even though time's already getting wasted out of my control."
-                                                                                    ^
-                        "I hate it, but at the same time, when time doesn't matter, how hard does that make it to not just fucking waste the days yourself, too?"
-                        "I don't want to WATCH my life pass by me. It's a paradox; on one hand, this time means you need to make the most of your days. But on the other hand, I can't bear to watch my 22-year-old self do nothing."
-                        "There are some days where all I can bear to do is sleep."
-                        "Losing time usually makes me feel depressed, oversleeping usually makes me feel shame and guilt, but all our time's already been lost."
-                        "Just going through these motions each day hurts sometimes, feeling constantly that I'm heading nowhere, having to face my devolution and stagnancy day after day."
-                        "I can't decide how bad it is that in some ways, I wish I could just sleep and wake up when it's all over. But at the same time, waking up and it's been a year, two years, would make me wanna die."
-                        jump choice3_done
-    
-                    # choice3_bright
-                    "Why not focus on what you can control right now?":
-                        $ dark = False
-                        "I haven't written this part yet."
-                        jump choice3_done
-            #else:
-                #menu:
-                    # choice3_bright:
-                        #.....
-                        #jump choice3_done
-                    # choice3_dark:
-                        #....
-                        #jump choice3_done
-    
-    
-        label choice3_done:
-            if dark:
-                menu:
-                    "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself."
-    
-                    # choice4_dark
-                    "It's been so much. You've just been floating along this whole time, you thought it'd be temporary.":
-                        $ dark = True
-                        "I know, right? I can't stop thinking about that. I thought I would be back at my dorm, back with my cat in a few weeks. I acted so ahead-of-time that it just felt precautionary, and now we're coming up on year two."
-                        "I'm so good at just chugging along, not thinking about it, \"taking it surprisingly well\", but really, I'm just on autopilot."
+File "game/script.rpy", line 19: expected statement.
+    facedissolve1
+                 ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Wed Feb 24 21:07:20 2021
+Sat Mar  6 22:50:54 2021

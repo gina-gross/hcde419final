@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 17, in script
-    scene bg sketchbook with Fade(0.5)
-TypeError: Fade() takes at least 3 arguments (3 given)
+While loading <'Image' u'beginning1.png'>:
+  File "game/script.rpy", line 19, in script
+    scene beginning1 with facedissolve1
+IOError: Couldn't find file 'beginning1.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 17, in script
-    scene bg sketchbook with Fade(0.5)
+  File "game/script.rpy", line 19, in script
+    scene beginning1 with facedissolve1
   File "renpy/ast.py", line 1397, in execute
     renpy.exports.with_statement(trans, paired)
   File "renpy/exports.py", line 1637, in with_statement
@@ -18,13 +18,35 @@ Full traceback:
     clear=clear)
   File "renpy/display/core.py", line 3007, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3366, in interact_core
-    new_widget=layers_root)
-  File "renpy/curry.py", line 48, in __call__
-    return self.callable(*(self.args + args), **merged_kwargs)
-TypeError: Fade() takes at least 3 arguments (3 given)
+  File "renpy/display/core.py", line 3517, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2377, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transition.py", line 181, in render
+    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transition.py", line 367, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/im.py", line 607, in render
+    return cache.get(self, render=True)
+  File "renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "renpy/display/im.py", line 651, in load
+    filelike = renpy.loader.load(self.filename)
+  File "renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'beginning1.png'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.2.1292
 419 Project renpy 1.0
-Sat Mar  6 19:52:27 2021
+Sat Mar  6 22:51:27 2021
