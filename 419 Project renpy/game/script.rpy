@@ -13,7 +13,7 @@ label start:
     scene bg sketchbook with Fade(0.1, 0.5, 1.2)
     scene beginning1 with Dissolve(2.0)
     pause
-    scene beginning2 with Dissolve(1.5)
+    scene beginning2 with Dissolve(1.0)
     pause
     scene phone screen1 with Fade(0.5, 0.2, 1.0)
     pause
@@ -38,14 +38,33 @@ label start:
         "Look on the bright side":
             $ dark = False
             # i'm feeling good. but i don't know, sometimes maybe i should take more time to acknowledge how tough this really all is. on everyone -- so it's okay to think about, sometimes, how it's been tough on me.
+            scene bg sketchbook with pixellate
             "My performance in school has been great, it has actually improved a lot since quarantine started."
+            scene gpa1 with Dissolve(2.0)
             "Whether it's because engaging with school the way I like to became surprisingly more accessible (that's probably a big reason, actually), I've been consistently more engaged overall, feeling checked in."
-            "Which feels good. That's what I started off college like, it's what I think of as the default version of \"me\". But I go through cycles; I stray away from that and struggle to get back to it."
+            scene gpa2 with Dissolve(1.5)
+            "Which feels good. That's what I started off college like, it's what I think of as the default version of \"me\". But I go through cycles; I stray away from that and struggle to get back to it, at times."
+            scene gpa2a with Dissolve(1.0)
+            scene gpa2b with Dissolve(1.0)
+            scene gpa2c with Dissolve(1.0)
+            scene gpa2d with Dissolve(1.0)
+            scene gpa2e with Dissolve(1.5)
             "It's how I like to think of myself as being; though that's probably too generalizing, a bit of the perfectionist in me."
+            scene gpa3 with Dissolve(1.5)
             "But regardless, I like it when I feel like this— even if it's a high I can't always sustain, it feels like I've got my groove back. At least a little. I feel more fueled, energized."
-            "I feel intellectually stimulated, in a good way, and have somehow held the balance to not become {i}too{/i} stimulated and overwhelmed."
+            scene gpa3a with Dissolve(1.0)
+            scene gpa3b with Dissolve(1.0)
+            scene gpa3c with Dissolve(1.0)
+            scene gpa3d with Dissolve(1.0)
+            scene gpa3e with Dissolve(1.5)
+            "I feel intellectually stimulated, in a good way, and have somehow held the balance thus far to not become {i}too{/i} stimulated and overwhelmed."
+            scene gpa4 with Dissolve(1.5)
             "I still lose my energy sometimes, but it's less overreaching than other times in the past. There's always bumps along the road, but I feel good about my direction in general; I'm not getting too derailed."
-            "Part of it, too, probably has a lot to do with the fact that I entered the finishing stages of my education, finally capping it off FINALLY, as this all started."
+            scene gpa4a with Dissolve(1.0)
+            scene gpa4b with Dissolve(1.0)
+            scene gpa4c with Dissolve(1.0)
+            scene gpa4d with Dissolve(1.5)
+            "Part of it, too, probably has a lot to do with the fact that I entered the finishing stages of my education, finally capping it off {i}FINALLY{/i}, as this all started."
             jump choice1_done
 
 
@@ -63,7 +82,9 @@ label start:
             scene img then and now with Dissolve(0.7)
             "Ugh, \"when this is all over\"... I hate saying that now, it just sounds like saying \"once I'm not depressed anymore\" or \"I swear he's gonna change\"."
             scene img then and now all info with Dissolve(0.7)
-            "I know everyone else has grown a year older, too. but it's my early twenties... Losing a single year right now feels like so much. I feel like I'm LOSING, WASTING so much."
+            "I know everyone else has grown a year older, too. but it's my early twenties... every year right now, from 20-25, feels crucial. Losing a single year in this stage of my life feels like so much. Like I'm losing, {i}wasting{/i} so much."
+            "The thought of this going on and continuing to lose time for another year, or (god forbid) two, makes me feel sick. I want to be taking my first steps into establishing my future life;"
+            "the idea of still feeling this waiting and anticipation, and not being fully or safely able to spread my wings and start my next chapter, then being plopped back into the world having missed my crucial transformative years..."
             jump choice1_done
 
 ##################################################
@@ -87,7 +108,7 @@ label start:
                     $ dark = False
                     "Funnily enough, and maybe it's because of that, but I feel like I've been weirdly more stable during this time; at least in some ways."
                     "I had a check-in with one of my doctors last week, the last time I saw her was way back in June 2020, and she mentioned that my anxiety screener had gone WAY down, apparently."
-                    "I guess I never really thought about it, but I HAVE been less anxious; overall, on the day-to-day. I guess 'cause I have less going on... but like, in a good way?"
+                    "I guess I never really thought about it, but I HAVE been less anxious— overall, on the day-to-day. I guess 'cause I have less going on... but like, in a good way?"
                     "But then of course, in the more broad sense, we're probably ALL more anxious now than ever... I mean, right?"
                     "Weird how that stuff works sometimes, huh?"
                     # or have a separate choice for diversion away from spiraling thoughts-- e.g., immediately trying to seek comfort or distraction
@@ -104,7 +125,7 @@ label start:
 
         else: # look on the bright side
             "It's not like I'm painstakingly avoiding it all the time or being delusional about this all, though. Even though I don't wish to compartmentalize, I think it's good overall that I don't let it bear down on me all the time?"
-            "I mean, it's a weird situation. I wanna make sure I'm coping with this healthily, but also, even if I {i}am{/i} compartmentalizing or whatever, I seem to be coping and functioning pretty well all things considered."
+            "I mean, it's a weird situation. I wanna make sure I'm coping with this healthily, but also, even if I {i}am{/i} compartmentalizing or whatever, I seem to be coping and functioning pretty well, all things considered."
             "If it ain't broke, don't fix it, right?"
 
             # Choice 2 (bright menu)
@@ -114,7 +135,7 @@ label start:
                     $ dark = False
                     "Yeah; funnily enough, I feel like I've been weirdly more stable during this time, at least in some ways."
                     "I had a check-in with one of my doctors last week, the last time I saw her was way back in June 2020, and she mentioned that my anxiety screener had gone WAY down, apparently."
-                    "I guess I never really thought about it, but I HAVE been less anxious; overall, on the day-to-day. I guess 'cause I have less going on... but like, in a good way?"
+                    "I guess I never really thought about it, but I HAVE been less anxious— overall, on the day-to-day. I guess 'cause I have less going on... but like, in a good way?"
                     "But then of course, in the more broad sense, we're probably ALL more anxious now than ever... I mean, right?"
                     "Weird how that stuff works sometimes, huh?"
                     jump choice2_done
@@ -123,8 +144,9 @@ label start:
                 "It's okay to introspect.":
 
                     "Hahah, well, of course it is. I always try to be introspective, as a person and just in general. But introspection on a topic like this seems tricky, I think."
-                    "I don't want to go down a train of thought that will just make me feel defeated, or sad, just for the sake of \"trying to keep it real\" or something."
-                    "There's nothing {i}I{/i} can do to just fix this situation. And I have a hard time engaging with deep stuff like this halfway, so sometimes I just gotta ask myself, \"Do you really want to subject yourself to this train of thought right now?\""
+                    "I don't want to go down a negative train of thought for the sake of it; start thinking in a way that will make me feel defeated, or sad, just for the sake of \"trying to keep it real\" or something."
+                    "There's nothing {i}I{/i} can do to just fix this situation. And I have a hard time engaging with feelings like this halfway."
+                    "Sometimes I just gotta ask myself, \"Do you really want to subject yourself to this train of thought right now?\""
 
 ##################################################
 
