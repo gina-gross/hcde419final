@@ -1,27 +1,16 @@
-<<<<<<< Updated upstream
-Mon Mar  8 16:51:55 2021
-=======
+
 Tue Mar  9 16:06:32 2021
->>>>>>> Stashed changes
+Mon Mar  8 17:48:42 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.2.1292
  
 
-<<<<<<< Updated upstream
-Bootstrap to the start of init.init took 0.10s
-Early init took 0.00s
-Loader init took 0.13s
-Loading error handling took 0.10s
-Loading script took 1.42s
-Loading save slot metadata. took 0.18s
-=======
 Bootstrap to the start of init.init took 0.09s
 Early init took 0.01s
 Loader init took 0.03s
 Loading error handling took 0.02s
 Loading script took 0.25s
 Loading save slot metadata. took 0.02s
->>>>>>> Stashed changes
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
@@ -36,29 +25,17 @@ Initial gc. took 0.03s
 DPI scale factor: 2.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-<<<<<<< Updated upstream
-Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.01s
-Save screen analysis took 0.08s
-=======
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.09s
->>>>>>> Stashed changes
 Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-<<<<<<< Updated upstream
-Interface start took 0.18s
-=======
 Interface start took 0.12s
->>>>>>> Stashed changes
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -310,8 +287,7 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(2560, 1440) drawable=(2560, 1440)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-<<<<<<< Updated upstream
-Total time until interface ready: 5.32977700233s
+Total time until interface ready: 1.59970903397s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
@@ -319,6 +295,3 @@ Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
-=======
-Total time until interface ready: 1.59970903397s
->>>>>>> Stashed changes
