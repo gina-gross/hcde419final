@@ -160,11 +160,11 @@ label start:
                 # choice 3 (dark)
                 "Feel your feelings.":
                     $ dark = True
-                    "On the topic of \"wasting time\" from before, I still feel like I'm wasting so much even though time's already getting wasted out of my control."
+                    "Thinking about \"wasting time\", I still feel like I'm wasting so much even though time's already getting wasted out of my control."
                     "I hate it, but at the same time, when time doesn't matter, how hard does that fucking make it to not go ahead and just waste the days yourself, too?"
-                    "I don't want to WATCH my life pass me by. It's a paradox; on one hand, I want to be making the most out of my days right now. But on the other hand, I can't bear to watch my precious youth go inert."
+                    "I don't want to WATCH my life pass me by.{w} It's a paradox; on one hand, I want to be making the most out of my days right now. But on the other hand, I can't bear to watch my precious youth go inert."
                     "There are some days where all I can bear to do is sleep."
-                    "Losing time usually makes me feel depressed, oversleeping usually leaves me with shame and guilt, but all our time's already been lost."
+                    "Losing time usually makes me feel depressed, oversleeping usually leaves me with shame and guilt, but {i}the time's already been lost.{/i}"
                     "Just going through these motions each day hurts sometimes, feeling constantly that I'm heading nowhere, having to face my {i}devolution{/i} and {i}stagnancy{/i} day after day."
                     "I can't decide how bad it is that in some ways, I'd love to just wake up when this is all over. But at the same time, waking up and it's one year, two years later, would make me wanna die."
                     jump choice3_done
@@ -194,17 +194,19 @@ label start:
     label choice3_done:
 
         if dark: # feel your feelings
+            "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
 
             # Choice 4 (dark menu)
             menu:
-                "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
-
                 # choice 4 (dark)
-                "It's been so much. You've just been floating along this whole time; you thought it'd be temporary.":
+                "It's been so much. You've just been floating along since this started; {i}you thought it would be temporary.{i}":
                     $ dark = True
-                    "I know, right? I can't stop thinking about that. I thought I would be back at my dorm, back with my cat in a few weeks. I acted so ahead-of-time that it just felt precautionary, and now... it's March again."
-                    "I'm so good at just chugging along, not thinking about it, \"taking it surprisingly well\", but really, I'm just on autopilot. Trying to avoid burnout as much as I can."
+                    "I know, right? I can't stop thinking about that. I thought I would be back at my dorm with my cat Midge in no time. I was just staying with my dad \"for the week\"!"
+                    "I acted {b}so{/b} precautionarily, {b}so{/b} ahead-of-time— which was {i}good{/i}, don't get me wrong— but we acted so {i}fast{i}. And now... it's March again."
+                    "I'm so good at just chugging along, not thinking about it, \"taking it surprisingly well\", but really, I'm on autopilot. Trying to avoid burnout as much as I can."
+                    "Like Wile E. Coyote on the cliff, just keep running for now— don't stop to look down."
                     "How long is it gonna be? And will I go back to \"normal\" (whatever that is), remember how to be productive and function again? Or will I stay broken?"
+                    "I feel weirdly reverted, like I'm growing more childlike. Ugh.{w} I get it 'cause I had to move back in with my dad, and I've lost the independence I'd set up for myself, but I don't like it. I feel dependent and infantile."
                     scene midge with Dissolve(1.0)
                     "God, I just fucking wish that at least Midge were here. That's what hurts most of all. I just wish she was here."
                     jump choice4_done
