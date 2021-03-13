@@ -92,7 +92,7 @@ label start:
     # Choice 1 -> Choice 2
     label choice1_done:
 
-        if dark: # let yourself feel the weight of the world
+        if dark: # let yourself feel the weight of the world (1A)
             "Ugh. I guess I shouldn't start thinking about all this."
             scene thinkin open eye with Fade(0.5, 0.0, 1.0)
             "But when is it good to stop that train of thought? I don't want to ignore these feelings, but I don't know how to engage with them halfway."
@@ -102,10 +102,10 @@ label start:
 
             # Choice 2 (dark menu)
             menu:
-                # choice 2 (bright)
+                # choice 2 (med)
                 "Think about something else.":
                     hide thinkin_menu
-                    $ dark = False
+                    $ med = True
                     "Funnily enough, and maybe it's because of that, but I feel like I've been weirdly more stable during this time; at least in some ways."
                     "I had a check-in with one of my doctors last week, the last time I saw her was way back in June 2020, and she mentioned that my anxiety screener had gone WAY down, apparently."
                     "I guess I never really thought about it, but I HAVE been less anxious— overall, on the day-to-day. I guess 'cause I have less going on... but like, in a good way?"
@@ -123,7 +123,7 @@ label start:
                     jump choice2_done
 
 
-        else: # look on the bright side
+        else: # look on the bright side (1B)
             "It's not like I'm painstakingly avoiding it all the time or being delusional about this all, though. Even though I don't wish to compartmentalize, I think it's good overall that I don't let it bear down on me all the time?"
             "I mean, it's a weird situation. I wanna make sure I'm coping with this healthily, but also, even if I {i}am{/i} compartmentalizing or whatever, I seem to be coping and functioning pretty well, all things considered."
             "If it ain't broke, don't fix it, right?"
@@ -153,7 +153,10 @@ label start:
     # Choice 2 -> Choice 3
     label choice2_done:
 
-        if dark: # it's okay to introspect
+        if dark: # it's okay to introspect (2A)
+            "I just struggle back and forth because I don't want to be {i}indulgent{/i} with these feelings. I'm very cautious about that."
+            "Rationally, I want to engage the bad WITH the good. I want to think about this in a well-rounded way; be realistic, holistic."
+            "But how do I do it in a measured fashion? If I'm engaging with my negative feelings, how do I do it in a way that's good for perspective, and not just basically an exercise in self-hatred or flagellation?"
 
             # Choice 3 (dark menu)
             menu:
@@ -171,12 +174,43 @@ label start:
 
                 # choice 3 (bright)
                 "Why not focus on what you {i}can{/i} control right now?":
-                    $ dark = False
-                    "I haven't written this part yet."
+                    $ med = True
+                    "Maybe you're right. You don't have to sound so...{w}{i} plain?{w} flippant?{/i}{w} ...about it, though. It really feels, at first mental glance at least, that there's hardly {i}anything{/i} in my control."
+                    "That's kind of what characterizes this moment, isn't it? And why we're struggling? We all got control stripped away from us."
                     jump choice3_done
 
 
-        #else: # think about something else/you don't give yourself enough credit
+        elif med: # think about something else (2B)
+            "What I don't like is, most of the time, when I catch myself going down a rabbit hole and I reflexively try to \"think about something else\", it feels like a distraction; like a band-aid."
+            "I can't immediately switch my mood around in that moment— catch all the fallacies in my thinking, rebut each negative thought, become positive and start building myself back up right away."
+            "Even if that's the more correct train of thought, it takes a minute to {i}transition{/i} like that mentally."
+            "So that reflexive moment of \"don't think that way\" brings me in the middle: not actively being negative, pushing those thoughts away, but not actively thinking positive either."
+            "Just doing something else— looking for thoughtful games on itch.io where I can enter some new emotional journey, but one where I'll feel happy at the end; one I can choose, one I can control."
+            "Or even just placating myself until I feel I can move on or forget about it, or until I feel ready to take the emotions on— and that could be anything."
+            "Watching YouTube. Doing homework. Drawing. Scrolling Twitter. Taking a bath. Anything at all."
+            $ med = False
+
+            # Choice 3 (med menu)
+            menu:
+                # choice3 (dark)
+                "*Emperor Palpatine voice* Feel the darkness inside you!":
+                    $ dark = True
+                    "I just feel like I'm wasting so much precious time, even though time's already getting wasted out of my control."
+                    "I hate it, but at the same time, when time doesn't matter, how hard does that fucking make it to not go ahead and just waste the days yourself, too?"
+                    "I don't want to WATCH my life pass me by.{w} It's a paradox; on one hand, I want to be making the most out of my days right now. But on the other hand, I can't bear to watch my precious youth go inert."
+                    "There are some days where all I can bear to do is sleep."
+                    "Losing time usually makes me feel depressed, oversleeping usually leaves me with shame and guilt, but {i}the time's already been lost.{/i}"
+                    "Just going through these motions each day hurts sometimes, feeling constantly that I'm heading nowhere, having to face my {i}devolution{/i} and {i}stagnancy{/i} day after day."
+                    "I can't decide how bad it is that in some ways, I'd love to just wake up when this is all over. But at the same time, waking up and it's one year, two years later, would make me wanna die."
+                    jump choice3_done
+
+                # choice 3 (bright)
+                "Why not focus on good things? Something you {i}can{/i} control right now?":
+                    $ dark = False
+                    #....
+                    #jump choice3_done
+
+        #else: /you don't give yourself enough credit (2C)
 
             # Choice 3 (bright menu)
             #menu:
