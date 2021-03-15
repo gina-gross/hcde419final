@@ -73,7 +73,7 @@ label start:
             scene college_geen3 with Dissolve(1.0)
             scene college_geen4 with dissolve
             "I entered at sixteen. I was but a young babe. So when I took capstone last year, I started actually seeing the light at the end of the tunnel and feeling revved up— ready, {i}excited{/i} to finish up strong."
-            "But of course, pandemic started right in between my capstone quarters!{w} Ah, life...{w} But it kind of worked out.{w} I became more focused because I was checked back into my education with capstone, and I guess quarantine let me hone my attention." 
+            "But of course, pandemic started right in between my capstone quarters!{w} Ah, life...{w} But it kind of worked out.{w} I became more focused because I was checked back into my education with capstone, and I guess quarantine let me hone my attention."
             jump choice1_done
 
 
@@ -165,16 +165,17 @@ label start:
                     "I don't want to go down a negative train of thought for the sake of it; start thinking in a way that will make me feel defeated, or sad, just for the sake of \"trying to keep it real\" or something."
                     "There's nothing {i}I{/i} can do to just fix this situation. And I have a hard time engaging with feelings like this halfway."
                     "Sometimes I just gotta ask myself, \"Do you really want to subject yourself to this train of thought right now?\""
+                    jump choice2_done
 
 ##################################################
 
     # Choice 2 -> Choice 3
     label choice2_done:
+
+        if dark: # it's okay to introspect (2A)
         "I just struggle back and forth because I don't want to be {i}indulgent{/i} with these feelings. I'm very cautious about that."
         "Rationally, I want to engage the bad WITH the good. I want to think about this in a well-rounded way; be realistic, holistic."
         "But how do I do it in a measured fashion? If I'm engaging with my negative feelings, how do I do it in a way that's good for perspective, and not just basically an exercise in self-hatred or flagellation?"
-
-        if dark: # it's okay to introspect (2A)
 
             # Choice 3 (dark menu)
             menu:
