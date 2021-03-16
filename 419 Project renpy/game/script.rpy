@@ -1,8 +1,5 @@
 # The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
 # The game starts here.
 
 label start:
@@ -27,8 +24,7 @@ label start:
     "..."
     scene beginning4 with Dissolve(1.0)
 
-
-
+##################################################
     # Entering into the first menus/dialogue.
 
     # Choice 1
@@ -181,6 +177,7 @@ label start:
             menu:
                 # choice 3 (dark)
                 "Feel your feelings.":
+                    hide thinkin eyes closed
                     $ dark = True
                     "Thinking about \"wasting time\", I still feel like I'm wasting so much even though time's already getting wasted out of my control."
                     "I hate it, but at the same time, when time doesn't matter, how hard does that fucking make it to not go ahead and just waste the days yourself, too?"
@@ -193,25 +190,34 @@ label start:
 
                 # choice 3 (bright)
                 "Why not focus on what you {i}can{/i} control right now?":
+                    hide thinkin eyes closed
                     $ dark = False
-                    #$ med = True
                     "Maybe you're right. You don't have to sound so...{w}{i} plain?{w} flippant?{/i}{w} ...about it, though.{w} It really feels, at first mental glance, that there's hardly {i}anything{/i} in my control."
                     "That's kind of what characterizes this moment, isn't it? And why we're struggling? We all got control stripped away from us."
+                    "But yeah, you're right. There's still good things, actually still a lot of positive in this whole mess."
                     jump choice3_done
 
 
         else: #you don't give yourself enough credit (2B)
+        "I guess I have a hard time being self-congratulatory. Like, in a meaningful way."
+        "When I'm accomplishing, it's something I already expect of myself. So, I don't know, I don't bask in it. It just makes me feel like I'm on the right track."
+        "I do acknowledge it, but I don't know, it's kind of an unsaid given. I don't really let it sink in or give credit to the fact that no, this was an accomplishment of {i}my{/i} actual work and effort."
+        "{i}I{/i} did this. {i}I{/i} made it happen, it didn't just happen {i}to{/i} me."
+        "Of course, it's paradoxical and not actually conducive to more success because by doing this, I give more mental attention to my failures."
+        "Worrying about it, hoping I don't fail, chastising myself when I do.{w} My success goes left unsaid but hoo boy, my failure sure doesn't."
+        "But spending more energy worrying about failing and punishing myself for it makes my default self-talk more negative, disproportionate to what I probably actually deserve."
+        "It {i}reinforces{/i} that dumb thought pattern because I'm not recognizing my successes."
+        "Anyway, all this to say that I KNOW I really should give myself way more credit, including and especially in this pandemic.{w} But even a benign comment like that feels weird to say!"
+        "It makes me shy, I guess? I don't know, man!{w} But to be serious, my grades, my improvement in school, my pretty-good mental health, my stable outlook are all {i}not an accident{/i}."
+        "It actually took me {i}work{/i} to get there, and it takes work to stay there."
+        "Even if it's work that feels invisible to me (i.e., the vague \"I've just been more engaged somehow/have more capacity now, I guess\" mechanism), it's still not a given. I {i}have{/i} worked hard to be doing well."
 
             # Choice 3 (bright menu)
             menu:
                 # choice3 (bright)
-                "..... (bright)":
-                    "Haven't written yet"
-                    jump choice3_done
-
-                # choice 3 (dark)
-                "..... (dark)":
-                    "Haven't written yet"
+                "That's more like it. It's easy to write off the good as \"the usual\", but it's not. Right now, the little things are what makes the difference. Focus on the little wins, which are all around you.":
+                    $ dark = False
+                    "Yeah, you're right. When I think about it, there's still weird positives out of this whole mess. A lot, actually."
                     jump choice3_done
 
 ##################################################
@@ -220,7 +226,7 @@ label start:
     label choice3_done:
 
         if dark: # feel your feelings
-            "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
+        "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
 
             # Choice 4 (dark menu)
             menu:
@@ -237,14 +243,7 @@ label start:
                     "God, I just fucking wish that at least Midge were here. That's what hurts most of all. I just wish she was here."
                     jump choice4_done
 
-                # choice 4 (bright)
-                "....":
-                    $ dark = False
-                    "I haven't written this part yet."
-                    jump choice4_done
-
         else: # why not focus on what you CAN control
-            "But yeah, you're right. There's still good things, actually still a lot of positive in this whole mess."
             "I've been fortunate, for one. {i}We{/i} (my family) have been fortunate, but {i}I've{/i} been fortunate too.{w} There's a lot to be grateful about right now."
             "I {i}had a place to go{/i}... we can just start right there.{w} Not everybody could say that. Not everyone had that luxury."
             "Even if we don't have a \"family home\", and it's not like we have a ton of money—{w} as in, the kind of money that gives you, like... {i}stability{/i}—{w} I'm in an extremely privileged position that my dad could take me in."
@@ -287,13 +286,12 @@ label start:
                 "You let Midge down.":
                     $ dark = True
                     "I know.{w} That's how I feel. Even though I know that {i}literally{/i} it's not true, I can't help but feel that way."
+                    scene midgey_kiss with Dissolve(1.0)
                     "I adopted her myself, she's the biggest \"adult\" move I've made in my life. I love her so much, we are so close, she has been there for me through everything. When I adopted her, I made her a promise."
                     "That I could take on the responsibility, that I would always be there for her. It's not something I take lightly. Yet I've gone back on that promise. How could I do that to her?"
                     jump choice4_done
 
 ##################################################
-
-    # Unfinished #
 
     # Choice 4 -> Choice 5
     label choice4_done:
@@ -311,12 +309,28 @@ label start:
             "I know there's not a realistic situation where I would have been able to keep everything the same. Stay living on my own. But I feel like I should have done more. Tried harder."
             "It's not realistic, whatever. I {i}know{/i} that intellectually. But my love for her...{w} I feel like I just shipped her off when things got hard. I feel like I abandoned her."
             menu:
-                # choice 5 (bright)
+                # choice 5 (dark)
                 "You're starting to cry. Stop thinking like this.":
+                    $ dark = True
                     "God, I know. Now I'm {i}really{/i} just entering the realm of self-flagellation.{w} But God, it's true. I feel that way."
+                    "I'm not going to spend time rewarding those thoughts, because even I know they're unrealistic. But it all just kind of started hitting me at once when it began to approach a full year, you know?"
+                    "Maybe it's a projection of my worry for the future too. It's so fucked because Midge has been mine for three years, and now there's a full year of being away from me. An entire quarter of how long I've had her?!"
+                    "I really don't want her time away from me to grow equal, God forbid even SURPASS the time she's been with me!"
+                    jump choice5_done
 
-                ".... (dark)":
-                    "Haven't written this yet."
+                # choice 5 (bright)
+                "You're feeling grief, and that's real. It's okay. But you know those things aren't true.":
+                    $ dark = False
+                    "Yeah... I know. And I know the choice I made is actually a testament of responsibility, and of doing the right thing. I'd say \"sacrifice\" but that sounds extreme."
+                    "It just really started getting to me when it began to come up on a year.{w} It all just hit me, I don't know. The whole situation really started to sink in."
+                    "The future feels so uncertain too. Especially with graduating college— I'm not going to be living in a dorm apartment anymore. Where am I gonna live? What will my next chapter actually look like?"
+                    jump choice5_done
+
+##################################################
+
+    # After Choice 5
+    label choice5_done:
+        
 
 
 
