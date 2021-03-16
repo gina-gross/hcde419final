@@ -111,7 +111,7 @@ label start:
             menu:
                 # choice 2 (bright)
                 "Think about something else.":
-                    hide thinkin_menu
+                    scene lean_on_hand with Dissolve(1.0)
                     $ dark = False
                     "What I don't like is, most of the time, when I catch myself going down a rabbit hole and I reflexively try to \"think about something else\", it feels like a distraction; like a band-aid."
                     "I can't immediately switch my mood around in that moment— catch all the fallacies in my thinking, rebut each negative thought, become positive and start building myself back up right away."
@@ -125,7 +125,7 @@ label start:
 
                 # choice 2 (dark)
                 "It's okay to introspect.":
-                    show thinkin eyes closed with dissolve
+                    scene thinkin eyes closed with dissolve
                     $ dark = True
                     "Okay. You see, I know our lives have changed, and it's okay to think about it, but the thing is the entire situation is messed up in so many ways, there's so much to think about, it causes pain and anger and frustration..."
                     "and there's nothing I can do to just fix this situation so I just ask myself, \"Do you really want to subject yourself to this train of thought right now?\""
@@ -136,6 +136,7 @@ label start:
             # the transition to this train of thought from you talking about your gpas and feeling good about finishing school doesn't make sense.
             # needs to be a clearer transition or remind to bring it back to covid; the switch in topics and emotions seems disjointed and sudden
             # keep on the train of thought of being positive?
+            scene lean_on_hand with Dissolve(1.0)
             "It's good to feel good. Especially right now, just all things considered.{w} But I don't know, sometimes maybe I should take more time to acknowledge how tough this really all is."
             "Tough on everyone — so it's okay to think about, sometimes, how it's been tough on me, too."
             "It's not like I'm painstakingly avoiding it all the time or being delusional about this all, though. Even though I don't wish to compartmentalize, I think it's good overall that I don't let it bear down on me all the time?"
@@ -177,7 +178,6 @@ label start:
             menu:
                 # choice 3 (dark)
                 "Feel your feelings.":
-                    hide thinkin eyes closed
                     $ dark = True
                     "Thinking about \"wasting time\", I still feel like I'm wasting so much even though time's already getting wasted out of my control."
                     "I hate it, but at the same time, when time doesn't matter, how hard does that fucking make it to not go ahead and just waste the days yourself, too?"
@@ -190,7 +190,6 @@ label start:
 
                 # choice 3 (bright)
                 "Why not focus on what you {i}can{/i} control right now?":
-                    hide thinkin eyes closed
                     $ dark = False
                     "Maybe you're right. You don't have to sound so...{w}{i} plain?{w} flippant?{/i}{w} ...about it, though.{w} It really feels, at first mental glance, that there's hardly {i}anything{/i} in my control."
                     "That's kind of what characterizes this moment, isn't it? And why we're struggling? We all got control stripped away from us."
@@ -238,6 +237,7 @@ label start:
                     "I'm so good at just chugging along, not thinking about it, \"taking it surprisingly well\", but really, I'm on autopilot. Trying to avoid burnout as much as I can."
                     "Like Wile E. Coyote on the cliff, just keep running for now— don't stop to look down."
                     "How long is it gonna be? And will I go back to \"normal\" (whatever that is), remember how to be productive and function again? Or will I stay broken?"
+                    scene baby with Dissolve(1.0)
                     "I feel weirdly reverted, like I'm growing more childlike. Ugh.{w} I get it 'cause I had to move back in with my dad, and I've lost the independence I'd set up for myself, but I don't like it.{w} I feel dependent and infantile."
                     scene midge with Dissolve(1.0)
                     "God, I just fucking wish that at least Midge were here. That's what hurts most of all. I just wish she was here."
@@ -330,7 +330,25 @@ label start:
 
     # After Choice 5
     label choice5_done:
-        
+        scene bg sketchbook w pixellate
+        "At least there's actually hope on the horizon."
+        "The worst part of this all, I think, was{w} (is?){w} the uncertainty— as in; the rough situation itself is okay maybe, but having {i}no{/i} mental concept of a timeline isn't."
+        "Not being able to plan ahead, or knowing when you CAN or even should start planning; only being able to watch and wait, literally only existing in the moment."
+        "I like to plan, to prepare myself for things, to at least have some mental concept of my next steps. Knowing what's coming, you know? But obvs, in the pandemic, we can't do that. We HAVE to take it one day at a time."
+        "Which gets boring! I hate such a sustained feeling of waiting, anticipation— it feels so unnatural. Feelings like that aren't supposed to be perpetual!"
+        "But finally, we have our first {i}concrete{/i} next step in the timeline:{w} the vaccine.{w} I don't know how quickly this pandemic will really get handled, but dear God, at {i}LEAST{/i} there's another data point for the mental map."
+        "I have another point of reference from which to conceptualize the situation, for once. It's not PURELY just endless ambiguity with no respite."
+        "And while \"going back to normal\" for real is going to be its own crazy transition— I definitely, weirdly, don't feel ready— that's not really something to think about yet."
+        "Allegedly, starting May 1st all adults will become eligible for the vaccine. Who knows how long it'll actually take after that to go through the line and get it, but man, whatever."
+        "It'll be nice to be able to see more of my friends finally! I can't even imagine it right now, haha.{w} Nothing big or fancy, but just something. It's just good for the heart."
+        "And best of all. {w} {i}Drumroll please...{/i} {w} I'll get to spend MUCH more time with Susan! My Midge infusions will go up significantly.{w} As it should be. It's what the doctor ordered, after all."
+        "And hey, right now, that's... kind of all I need."
+        "It's not the light at the end of the tunnel, but at least we have our first mile marker."
+        "We have an idea of where we are now. Roughly, but it's there.{w} That sounds like a little, but it's a lot."
+        "And we have a place to go next."
+        scene black with Dissolve(1.0)
+        "The end.{w}.. for now?"
+
 
 
 
