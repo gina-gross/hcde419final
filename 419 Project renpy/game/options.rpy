@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("419 Project renpy")
+define config.name = _("A Conversation with Myself about Coronavirus")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -40,7 +40,7 @@ Final project for HCDE 419, Explorations in HCI. Built Feb 23 through March 15, 
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "419Projectrenpy"
+define build.name = "mycovidconversation"
 
 
 ## Sounds and music ############################################################
@@ -48,8 +48,8 @@ define build.name = "419Projectrenpy"
 ## These three variables control which mixers are shown to the player by
 ## default. Setting one of these to False will hide the appropriate mixer.
 
-define config.has_sound = True
-define config.has_music = True
+define config.has_sound = False
+define config.has_music = False
 define config.has_voice = True
 
 
@@ -91,7 +91,7 @@ define config.after_load_transition = None
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
 
 
 ## A variable to set the transition used when the game starts does not exist.
