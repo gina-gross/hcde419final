@@ -63,11 +63,7 @@ label start:
             #make this more explicit, talk about how finishing your education has you feel focused etc, seeing the light at the end of the tunnel, motivated, why and how
             "Like, I'm no longer in the murky middleground of my education! I knew it would take me an ambiguous \"longer time\" to finish a double degree, but \"the end\" still certainly felt far off, still some vague, soon-ish future time."
             "You know, a bridge I'll get to eventually. Especially after entering college early, and then going through a dip where I knew I'd have to retake stuff—{w} all this run-up to my eventual degree(s) was just getting perpetual."
-            scene college_geen1 with Dissolve(1.5)
             "Six years to get two degrees is super normal, and I'm still gonna be graduating at 22— I'm not lagging by any means, but I kinda realized why college has felt so long for me once my therapist mentioned that like... it's been 36\% of my life."
-            scene college_geen2 with Dissolve(1.0)
-            scene college_geen3 with Dissolve(1.0)
-            scene college_geen4 with dissolve
             "I entered at sixteen. I was but a young babe. So when I took capstone last year, I started actually seeing the light at the end of the tunnel and feeling revved up— ready, {i}excited{/i} to finish up strong."
             "But of course, pandemic started right in between my capstone quarters!{w} Ah, life...{w} But it kind of worked out.{w} I became more focused because I was checked back into my education with capstone, and I guess quarantine let me hone my attention."
             jump choice1_done
@@ -136,7 +132,6 @@ label start:
             # the transition to this train of thought from you talking about your gpas and feeling good about finishing school doesn't make sense.
             # needs to be a clearer transition or remind to bring it back to covid; the switch in topics and emotions seems disjointed and sudden
             # keep on the train of thought of being positive?
-            scene lean_on_hand with Dissolve(1.0)
             "It's good to feel good. Especially right now, just all things considered.{w} But I don't know, sometimes maybe I should take more time to acknowledge how tough this really all is."
             "Tough on everyone — so it's okay to think about, sometimes, how it's been tough on me, too."
             "It's not like I'm painstakingly avoiding it all the time or being delusional about this all, though. Even though I don't wish to compartmentalize, I think it's good overall that I don't let it bear down on me all the time?"
@@ -162,6 +157,7 @@ label start:
                     "I don't want to go down a negative train of thought for the sake of it; start thinking in a way that will make me feel defeated, or sad, just for the sake of \"trying to keep it real\" or something."
                     "There's nothing {i}I{/i} can do to just fix this situation. And I have a hard time engaging with feelings like this halfway."
                     "Sometimes I just gotta ask myself, \"Do you really want to subject yourself to this train of thought right now?\""
+                    scene lean_on_hand with Dissolve(1.0)
                     jump choice2_done
 
 ##################################################
@@ -170,9 +166,9 @@ label start:
     label choice2_done:
 
         if dark: # it's okay to introspect (2A)
-        "I just struggle back and forth because I don't want to be {i}indulgent{/i} with these feelings. I'm very cautious about that."
-        "Rationally, I want to engage the bad WITH the good. I want to think about this in a well-rounded way; be realistic, holistic."
-        "But how do I do it in a measured fashion? If I'm engaging with my negative feelings, how do I do it in a way that's good for perspective, and not just basically an exercise in self-hatred or flagellation?"
+            "I just struggle back and forth because I don't want to be {i}indulgent{/i} with these feelings. I'm very cautious about that."
+            "Rationally, I want to engage the bad WITH the good. I want to think about this in a well-rounded way; be realistic, holistic."
+            "But how do I do it in a measured fashion? If I'm engaging with my negative feelings, how do I do it in a way that's good for perspective, and not just basically an exercise in self-hatred or flagellation?"
 
             # Choice 3 (dark menu)
             menu:
@@ -184,7 +180,7 @@ label start:
                     "I don't want to WATCH my life pass me by.{w} It's a paradox; on one hand, I want to be making the most out of my days right now. But on the other hand, I can't bear to watch my precious youth go inert."
                     "There are some days where all I can bear to do is sleep."
                     "Losing time usually makes me feel depressed, oversleeping usually leaves me with shame and guilt, but {i}the time's already been lost.{/i}"
-                    "Just going through these motions each day hurts sometimes, feeling constantly that I'm heading nowhere, having to face my {b}devolution{/b} and {b}stagnancy{/b} day after day."
+                    "Just going through these motions each day hurts sometimes, feeling constantly that I'm heading nowhere, having to face my {i}devolution{/i} and {i}stagnancy{/i} day after day."
                     "I can't decide how bad it is that in some ways, I'd love to just wake up when this is all over. But at the same time, waking up and it's one year, two years later, would make me wanna die."
                     jump choice3_done
 
@@ -198,25 +194,26 @@ label start:
 
 
         else: #you don't give yourself enough credit (2B)
-        "I guess I have a hard time being self-congratulatory. Like, in a meaningful way."
-        "When I'm accomplishing, it's something I already expect of myself. So, I don't know, I don't bask in it. It just makes me feel like I'm on the right track."
-        "I do acknowledge it, but I don't know, it's kind of an unsaid given. I don't really let it sink in or give credit to the fact that no, this was an accomplishment of {i}my{/i} actual work and effort."
-        "{i}I{/i} did this. {i}I{/i} made it happen, it didn't just happen {i}to{/i} me."
-        "Of course, it's paradoxical and not actually conducive to more success because by doing this, I give more mental attention to my failures."
-        "Worrying about it, hoping I don't fail, chastising myself when I do.{w} My success goes left unsaid but hoo boy, my failure sure doesn't."
-        "But spending more energy worrying about failing and punishing myself for it makes my default self-talk more negative, disproportionate to what I probably actually deserve."
-        "It {i}reinforces{/i} that dumb thought pattern because I'm not recognizing my successes."
-        "Anyway, all this to say that I KNOW I really should give myself way more credit, including and especially in this pandemic.{w} But even a benign comment like that feels weird to say!"
-        "It makes me shy, I guess? I don't know, man!{w} But to be serious, my grades, my improvement in school, my pretty-good mental health, my stable outlook are all {i}not an accident{/i}."
-        "It actually took me {i}work{/i} to get there, and it takes work to stay there."
-        "Even if it's work that feels invisible to me (i.e., the vague \"I've just been more engaged somehow/have more capacity now, I guess\" mechanism), it's still not a given. I {i}have{/i} worked hard to be doing well."
+            scene lean_on_hand with Dissolve(1.0)
+            "I guess I have a hard time being self-congratulatory. Like, in a meaningful way."
+            "When I'm accomplishing, it's something I already expect of myself. So, I don't know, I don't bask in it. It just makes me feel like I'm on the right track."
+            "I do acknowledge it, but I don't know, it's kind of an unsaid given. I don't really let it sink in or give credit to the fact that no, this was due to {i}my{/i} actual work and effort."
+            "{i}I{/i} did this. {i}I{/i} made it happen, it didn't just happen {i}to{/i} me."
+            "Of course, it's paradoxical and not actually conducive to more success because by doing this, I give more mental attention to my failures."
+            "Worrying about it, hoping I don't fail, chastising myself when I do.{w} My success goes left unsaid but hoo boy, my failure sure doesn't."
+            "But spending more energy worrying about failing and punishing myself for it makes my default self-talk more negative, disproportionate to what I probably actually deserve."
+            "It {i}reinforces{/i} that dumb thought pattern because I'm not recognizing my successes."
+            "Anyway, all this to say that I KNOW I really should give myself way more credit, including and especially in this pandemic.{w} But even a benign comment like that feels weird to say!"
+            "It makes me shy, I guess? I don't know, man!{w} But to be serious, my grades, my improvement in school, my pretty-good mental health, my stable outlook are all {i}not an accident{/i}."
+            "It actually took me {i}work{/i} to get there, and it takes work to stay there."
+            "Even if it's work that feels invisible to me (i.e., the vague \"I've just been more engaged somehow/have more capacity now, I guess\" mechanism), it's still not a given. I {i}have{/i} worked hard to be doing well."
 
             # Choice 3 (bright menu)
             menu:
                 # choice3 (bright)
                 "That's more like it. It's easy to write off the good as \"the usual\", but it's not. Right now, the little things are what makes the difference. Focus on the little wins, which are all around you.":
                     $ dark = False
-                    "Yeah, you're right. When I think about it, there's still weird positives out of this whole mess. A lot, actually."
+                    "Yeah, you're right. When I think about it, there's still weird positives in this whole mess. A lot, actually."
                     jump choice3_done
 
 ##################################################
@@ -225,7 +222,7 @@ label start:
     label choice3_done:
 
         if dark: # feel your feelings
-        "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
+            "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
 
             # Choice 4 (dark menu)
             menu:
@@ -257,11 +254,11 @@ label start:
                 # choice 4 (bright)
                 "You acted quickly and kept Midge safe. You protected her and made the right choice, even though it was difficult. Your feelings over it only show how much you care about her, how important she is to you.":
                     $ dark = False
-                    "I {b}{u}did not{/u}{/b} plan to separate with Midge. I only expected to stay with my dad for maybe a month, tops. I couldn't take her with me then, not just 'cause I'd be on the couch of a single-bed apartment (aka space),"
-                    "but also 'cause my dad's allergic. If I did take her there, it would have been a highly temporary solution at best. Plus, there's no pets allowed at the complex."
+                    "I {b}{u}did not{/u}{/b} plan to separate with Midge. I only expected to stay with my dad for maybe a month, tops. I couldn't take her with me then, not just 'cause I'd be on the couch of a single-bed apartment (aka space), but also 'cause my dad's allergic."
+                    "If I did take her there, it would have been extremely temporary. Plus, there's no pets allowed at the complex."
                     "Originally, I was just gonna ask my friend Juno if Midge could stay with her family for that bit, since they live and have stayed in the same family home for years, and already have cats."
                     "That was the best I could think of, but it would really be asking a lot out of them. I could only hope that the need would be extremely brief.{w} But I'm glad we didn't end up doing that."
-                    "Even though it was a scary thought, if I {i}did{/i} suddenly become dependent again, and actually {u}move in{/u} to my dad's with no more dorm as an option, we would need an {i}actual{/i} Midge contingency plan."
+                    "Even though it was a scary thought, if I {i}did{/i} suddenly become dependent again, and actually {i}move in{/i} to my dad's officially with no more dorm as an option, we would need an {i}actual{/i} Midge contingency plan."
                     "It was impossible to know the future at that time. So making real plans was hard, with so much up in the air.{w} But there needed to be a {i}place{/i} and a {i}plan{/i} for Midge."
                     "So that even in the worst case, she wouldn't be at the mercy of {i}my{/i} changing situations. I'm not gonna do that to her, there's just no way."
                     scene midgey_kiss with Dissolve(1.0)
@@ -270,7 +267,7 @@ label start:
                     "She already had full hands. But she had been talking about adopting a cat after her move; she's living in a cabin-like place on Vashon by herself."
                     "It was my dad's idea to have Midge stay with Susan. It ended up being the best situation that could have possibly happened, I think."
                     "She had the space, the literal {i}ability{/i} and capacity for Midge— and not just that, but the willingness. She wanted a kitty friend anyway."
-                    "So even though it was still an impostition on her, a big ask, it was less so than maybe for someone else. She's also owned cats before; logistically, this could actually work."
+                    "So even though it was still an imposition on her, a big ask, it was less so than maybe for someone else.{w} She's also owned cats before; logistically, this could actually work."
                     scene midge with Dissolve(1.0)
                     "And it did. It totally did. Midge is safe, warm and EXTREMELY loved with Susan. {w}And she gets to explore the outside world, the beautiful countryside of a Vashon yard, something she never did before."
                     "She's on an adventure. She's probably one of the only people whose world got bigger with the pandemic, haha."
@@ -299,14 +296,14 @@ label start:
         if dark: # it's been so much ...
             scene midgey_kiss with Dissolve(1.0)
             "I {b}{u}did not{/u}{/b} plan to separate with Midge. I only expected to stay with my dad for maybe a month, tops. How foolish I was back then."
-            "I couldn't take her with me then, not just because I was imposing myself into a single-bedroom apartment, but also because my dad's allergic. And there's no pets allowed at the complex."
-            "If I did take her with me then, it would have been highly temporary at best. We wouldn't be able to put off finding an {i}actual{/i} solution for very long."
+            "I couldn't take her with me then, not just because I was imposing myself on my dad's single-bedroom apartment, but also because he's allergic. And there's no pets allowed at the complex."
+            "If I did take her with me then, it would have been temporary at best. We wouldn't be able to put off finding an {i}actual{/i} solution for very long."
             "I can't overstate how thankful I am for my aunt Susan taking her in. It's good that we acted so quickly, ultimately. And the situation really worked out better than we could have hoped for."
             "Susan loves and understands cats just like I do, and she had just moved up to Washington. She was there by herself, with all her friends in California."
             "She already was in need of a kitty friend. And she knew how to take care of cats, it wasn't crazy out of nowhere. So really, it was perfect."
             "Plus, with how everything turned out, thank God that Midge was with her. She literally would have been {i}alone this whole year{/i} without her. Midge is still giving emotional support, even if not to me."
             "I {i}know{/i} it was the right thing to do, and it's actually a miracle how well it all worked out. So why do I still feel so deeply like I failed Midge?"
-            "I know there's not a realistic situation where I would have been able to keep everything the same. Stay living on my own. But I feel like I should have done more. Tried harder."
+            "I know there's not a realistic situation where I would have been able to keep everything the same. Stay living on my own, stay living with her. But I feel like I should have done more. Tried harder."
             "It's not realistic, whatever. I {i}know{/i} that intellectually. But my love for her...{w} I feel like I just shipped her off when things got hard. I feel like I abandoned her."
             menu:
                 # choice 5 (dark)
@@ -330,7 +327,7 @@ label start:
 
     # After Choice 5
     label choice5_done:
-        scene bg sketchbook w pixellate
+        scene beginning3 with pixellate
         "At least there's actually hope on the horizon."
         "The worst part of this all, I think, was{w} (is?){w} the uncertainty— as in; the rough situation itself is okay maybe, but having {i}no{/i} mental concept of a timeline isn't."
         "Not being able to plan ahead, or knowing when you CAN or even should start planning; only being able to watch and wait, literally only existing in the moment."
@@ -341,6 +338,7 @@ label start:
         "And while \"going back to normal\" for real is going to be its own crazy transition— I definitely, weirdly, don't feel ready— that's not really something to think about yet."
         "Allegedly, starting May 1st all adults will become eligible for the vaccine. Who knows how long it'll actually take after that to go through the line and get it, but man, whatever."
         "It'll be nice to be able to see more of my friends finally! I can't even imagine it right now, haha.{w} Nothing big or fancy, but just something. It's just good for the heart."
+        scene midgey_kiss with dissolve
         "And best of all. {w} {i}Drumroll please...{/i} {w} I'll get to spend MUCH more time with Susan! My Midge infusions will go up significantly.{w} As it should be. It's what the doctor ordered, after all."
         "And hey, right now, that's... kind of all I need."
         "It's not the light at the end of the tunnel, but at least we have our first mile marker."
