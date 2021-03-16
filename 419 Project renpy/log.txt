@@ -1,40 +1,46 @@
-Sun Mar 14 16:56:19 2021
+Mon Mar 15 19:29:29 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.3.1414
  
 
-Bootstrap to the start of init.init took 0.14s
-Early init took 0.00s
-Loader init took 0.13s
-Loading error handling took 0.03s
-Loading script took 0.34s
-Loading save slot metadata. took 0.05s
+Bootstrap to the start of init.init took 0.11s
+Early init took 0.01s
+Loader init took 0.08s
+Loading error handling took 0.09s
+Loading script took 0.40s
+Loading save slot metadata. took 0.27s
 Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\gina\\AppData\\Roaming/RenPy/backups\\419 Project renpy':
-Dump and make backups. took 0.15s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
+
+File "game/script.rpy", line 172: if statement expects a non-empty block.
+    if dark: 
+             ^
+
+File "game/script.rpy", line 178: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/script.rpy", line 200: expected statement.
+    else: 
+        ^
+
+File "game/script.rpy", line 215: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/script.rpy", line 227: if statement expects a non-empty block.
+    if dark: 
+             ^
+
+File "game/script.rpy", line 231: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/script.rpy", line 246: expected statement.
+    else: 
+        ^
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.10s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Performance test:
 Interface start took 0.22s
 
 Initializing gl renderer:
@@ -62,4 +68,65 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(2072, 1166) drawable=(2072, 1166)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 2.69180607796s
+Total time until interface ready: 2.11878800392s
+Resetting cache.
+Bootstrap to the start of init.init took 100.53s
+Early init took 0.00s
+Loader init took 0.09s
+Loading error handling took 0.05s
+Loading script took 0.32s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.19s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\gina\\AppData\\Roaming/RenPy/backups\\419 Project renpy':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.5.0 - Build 24.20.100.6299'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(2072, 1166) drawable=(2072, 1166)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 102.291692019s

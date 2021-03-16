@@ -170,9 +170,9 @@ label start:
     label choice2_done:
 
         if dark: # it's okay to introspect (2A)
-        "I just struggle back and forth because I don't want to be {i}indulgent{/i} with these feelings. I'm very cautious about that."
-        "Rationally, I want to engage the bad WITH the good. I want to think about this in a well-rounded way; be realistic, holistic."
-        "But how do I do it in a measured fashion? If I'm engaging with my negative feelings, how do I do it in a way that's good for perspective, and not just basically an exercise in self-hatred or flagellation?"
+            "I just struggle back and forth because I don't want to be {i}indulgent{/i} with these feelings. I'm very cautious about that."
+            "Rationally, I want to engage the bad WITH the good. I want to think about this in a well-rounded way; be realistic, holistic."
+            "But how do I do it in a measured fashion? If I'm engaging with my negative feelings, how do I do it in a way that's good for perspective, and not just basically an exercise in self-hatred or flagellation?"
 
             # Choice 3 (dark menu)
             menu:
@@ -198,18 +198,18 @@ label start:
 
 
         else: #you don't give yourself enough credit (2B)
-        "I guess I have a hard time being self-congratulatory. Like, in a meaningful way."
-        "When I'm accomplishing, it's something I already expect of myself. So, I don't know, I don't bask in it. It just makes me feel like I'm on the right track."
-        "I do acknowledge it, but I don't know, it's kind of an unsaid given. I don't really let it sink in or give credit to the fact that no, this was an accomplishment of {i}my{/i} actual work and effort."
-        "{i}I{/i} did this. {i}I{/i} made it happen, it didn't just happen {i}to{/i} me."
-        "Of course, it's paradoxical and not actually conducive to more success because by doing this, I give more mental attention to my failures."
-        "Worrying about it, hoping I don't fail, chastising myself when I do.{w} My success goes left unsaid but hoo boy, my failure sure doesn't."
-        "But spending more energy worrying about failing and punishing myself for it makes my default self-talk more negative, disproportionate to what I probably actually deserve."
-        "It {i}reinforces{/i} that dumb thought pattern because I'm not recognizing my successes."
-        "Anyway, all this to say that I KNOW I really should give myself way more credit, including and especially in this pandemic.{w} But even a benign comment like that feels weird to say!"
-        "It makes me shy, I guess? I don't know, man!{w} But to be serious, my grades, my improvement in school, my pretty-good mental health, my stable outlook are all {i}not an accident{/i}."
-        "It actually took me {i}work{/i} to get there, and it takes work to stay there."
-        "Even if it's work that feels invisible to me (i.e., the vague \"I've just been more engaged somehow/have more capacity now, I guess\" mechanism), it's still not a given. I {i}have{/i} worked hard to be doing well."
+            "I guess I have a hard time being self-congratulatory. Like, in a meaningful way."
+            "When I'm accomplishing, it's something I already expect of myself. So, I don't know, I don't bask in it. It just makes me feel like I'm on the right track."
+            "I do acknowledge it, but I don't know, it's kind of an unsaid given. I don't really let it sink in or give credit to the fact that no, this was an accomplishment of {i}my{/i} actual work and effort."
+            "{i}I{/i} did this. {i}I{/i} made it happen, it didn't just happen {i}to{/i} me."
+            "Of course, it's paradoxical and not actually conducive to more success because by doing this, I give more mental attention to my failures."
+            "Worrying about it, hoping I don't fail, chastising myself when I do.{w} My success goes left unsaid but hoo boy, my failure sure doesn't."
+            "But spending more energy worrying about failing and punishing myself for it makes my default self-talk more negative, disproportionate to what I probably actually deserve."
+            "It {i}reinforces{/i} that dumb thought pattern because I'm not recognizing my successes."
+            "Anyway, all this to say that I KNOW I really should give myself way more credit, including and especially in this pandemic.{w} But even a benign comment like that feels weird to say!"
+            "It makes me shy, I guess? I don't know, man!{w} But to be serious, my grades, my improvement in school, my pretty-good mental health, my stable outlook are all {i}not an accident{/i}."
+            "It actually took me {i}work{/i} to get there, and it takes work to stay there."
+            "Even if it's work that feels invisible to me (i.e., the vague \"I've just been more engaged somehow/have more capacity now, I guess\" mechanism), it's still not a given. I {i}have{/i} worked hard to be doing well."
 
             # Choice 3 (bright menu)
             menu:
@@ -225,7 +225,7 @@ label start:
     label choice3_done:
 
         if dark: # feel your feelings
-        "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
+            "Ugh. Ugh. I'm thinking negatively again. I know I can't control the situation, and I shouldn't be so hard on myself. I'm really not TRYING to be."
 
             # Choice 4 (dark menu)
             menu:

@@ -2,9 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: expected statement.
-    facedissolve1
-                 ^
+File "game/script.rpy", line 172: if statement expects a non-empty block.
+    if dark: 
+             ^
 
-Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Mar  6 22:50:54 2021
+File "game/script.rpy", line 178: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/script.rpy", line 200: expected statement.
+    else: 
+        ^
+
+File "game/script.rpy", line 215: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/script.rpy", line 227: if statement expects a non-empty block.
+    if dark: 
+             ^
+
+File "game/script.rpy", line 231: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/script.rpy", line 246: expected statement.
+    else: 
+        ^
+
+Ren'Py Version: Ren'Py 7.4.3.1414
+Mon Mar 15 19:29:30 2021
